@@ -2,7 +2,7 @@
 
 是一个用于 Linux 系统上与 GPIO（通用输入输出端口） 交互的 Python 库，特别是用于 Raspberry Pi 和其他使用 Broadcom BCM2835/BCM2711 系列芯片的设备（例如 Raspberry Pi 4）。它提供了一种方式来通过 GPIO 引脚与外部硬件（如 LED、按钮、传感器等）进行通信。
 
-## 主要功能：
+## 主要功能
 
 lgpio 库允许用户在 Python 中控制和读取 GPIO 引脚的状态。它的功能包括：
 
