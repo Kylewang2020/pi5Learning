@@ -25,11 +25,11 @@ def voice_detect(event, chip, pin_in, pin_out):
     '''使用 lgpio 库模拟 PWM函数'''
     # 设置 GPIO 引脚为 输入
     r = lgpio.gpio_claim_input(chip, pin_in)
-    print(" voice_detect: set GPIO-{} to output {}".format(pin_out, "成功" if r>=0 else "失败!"))
+    print(" voice_detect: set GPIO-{} to 输入 {}".format(pin_in, "成功" if r>=0 else "失败!"))
     
     # 设置 GPIO 引脚为输出
     r = lgpio.gpio_claim_output(chip, pin_out)
-    print(" voice_detect: set GPIO-{} to output {}".format(pin_out, "成功" if r>=0 else "失败!"))
+    print(" voice_detect: set GPIO-{} to 输出 {}".format(pin_out, "成功" if r>=0 else "失败!"))
 
     try:
         while not event.is_set():  # 检查事件是否被设置
@@ -52,7 +52,7 @@ def voice_detect(event, chip, pin_in, pin_out):
 # 主函数
 def main():
     # 参数设置 
-    pin_in = 5
+    pin_in = 12
     pin_out = 21
     gpiochip = 4
 
